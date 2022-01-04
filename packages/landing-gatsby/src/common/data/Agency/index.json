@@ -1,0 +1,314 @@
+{
+  "menuItems": [{
+      "label": "About Us",
+      "path": "#AboutUsSection",
+      "offset": "80"
+    },
+    {
+      "label": "Services",
+      "path": "#featureSection",
+      "offset": "100"
+    },
+    {
+      "label": "Responsibility",
+      "path": "#ResponsibilitySection",
+      "offset": "100"
+    },
+    {
+      "label": "Our Team",
+      "path": "#ExecutiveSection",
+      "offset": "100"
+    },
+    {
+      "label": "Request a Pickup",
+      "path": "#testimonialSection",
+      "offset": "100"
+    },
+    {
+      "label": "Careers",
+      "path": "#CareersSection",
+      "offset": "67"
+    },
+    {
+      "label": "FAQ",
+      "path": "#faqSection",
+      "offset": "100"
+    },
+    {
+      "label": "Contact Us",
+      "path": "#faqSection",
+      "offset": "100"
+    }
+    
+
+  ],
+  "aboutus": [{
+      "id": 1,
+      "title": "Diversity Equity and Inclusion",
+      "icon": "flaticon-next"
+    },
+    {
+      "id": 2,
+      "title": "Community Involvement ",
+      "icon": "flaticon-next"
+    },
+    {
+      "id": 3,
+      "title": "Environment & Sustainabilty",
+      "icon": "flaticon-next"
+    },
+    {
+      "id": 4,
+      "title": "Risk Management",
+      "icon": "flaticon-next"
+    }
+  ],
+  "features": [{
+      "id": 1,
+      "icon": "flaticon-pencil-case",
+      "title": "Tire Collection",
+      "description": "Tires of every shape and size are collected at more than 39,000 retail locations nationwide. We maintain a network of door-to-door reclamation services with processing plants at strategic locations."
+    },
+    {
+      "id": 2,
+      "icon": "flaticon-pencil-case",
+      "title": "Tire Remediation",
+      "description": "Abandoned tire piles are a serious environmental concern faced by communities across the country. Spotlight works with communities to remediate abandoned scrap tire piles"
+    },
+    {
+      "id": 3,
+      "icon": "flaticon-ruler",
+      "title": "Tire Processing",
+      "description": "We use innovative tools and technologies to recycle scrap tires into reusable raw materials, such as crumb rubber, rubber mulch and industrial feedstock."
+    }
+  ],
+  "qualityFeature": [{
+      "id": 1,
+      "icon": "flaticon-flask",
+      "title": "Competitve Salary",
+      "description": "Paid time off increases with tenure and employees are able to receive a set of passenger tires each year.."
+    },
+    {
+      "id": 2,
+      "icon": "flaticon-pencil-case",
+      "title": "Profit-Sharing",
+      "description": "5% profit share goes back to employees each year"
+    },
+    {
+      "id": 3,
+      "icon": "flaticon-ruler",
+      "title": "On-Site and Leadership Training",
+      "description": "Spotlight empowers its employees by keeping them informed on the state of the business and encourages them to provide feedback on the company’s future."
+    },
+    {
+      "id": 4,
+      "icon": "flaticon-briefing",
+      "title": "Tuition Reimbursement",
+      "description": "Tuition reimbursement for skills related classes/qualifications, i.e. CDL school, GED, mechanics certifications"
+    }
+  ],
+  "blog": [{
+      "id": 1,
+      "title": "Real home corporation",
+      "thumbnail_url": "../../assets/image/agency/blog/blog-img1.png",
+      "date": "November 02, 2018",
+      "postLink": "#1"
+    },
+    {
+      "id": 2,
+      "title": "Sheltech developer ltd.",
+      "thumbnail_url": "../../assets/image/agency/blog/blog-img2.png",
+      "date": "November 12, 2018",
+      "postLink": "#2"
+    },
+    {
+      "id": 3,
+      "title": "Alt architecture co.",
+      "thumbnail_url": "../../assets/image/agency/blog/blog-img3.png",
+      "date": "December 09, 2018",
+      "postLink": "#3"
+    }
+  ],
+  "teamMember": [{
+      "id": 1,
+      "name": "Sammy Stephenson",
+      "thumbnail_url": "../../assets/image/agency/team/1238936_10201852481264265_1676588347_n.jpeg",
+      "designation": "Co Founder",
+      "social_links": [{
+          "id": 1,
+          "icon": "flaticon-facebook-logo",
+          "url": "#"
+        },
+        {
+          "id": 1,
+          "icon": "flaticon-twitter-logo-silhouette",
+          "url": "#"
+        },
+        {
+          "id": 1,
+          "icon": "flaticon-instagram",
+          "url": "#"
+        },
+        {
+          "id": 1,
+          "icon": "flaticon-dribble-logo",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Nathan Massey",
+      "thumbnail_url": "../../assets/image/agency/team/20621188_10211922865860058_349627919806020391_n.jpeg",
+      "designation": "Co Founder",
+      "social_links": [{
+          "id": 1,
+          "icon": "flaticon-facebook-logo",
+          "url": "#"
+        },
+        {
+          "id": 1,
+          "icon": "flaticon-twitter-logo-silhouette",
+          "url": "#"
+        },
+        {
+          "id": 1,
+          "icon": "flaticon-instagram",
+          "url": "#"
+        },
+        {
+          "id": 1,
+          "icon": "flaticon-dribble-logo",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "testimonial": [
+    {
+      "id": 1,
+      "name": "Jon Doe",
+      "designation": "CEO of Denish Tire",
+      "comment": "Best working experience  with this amazing team & in future, we want to work together",
+      "avatar_url": "../../assets/image/agency/client/P311_BASF-investiert-in-Pyrum-scaled.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Roman Ul Oman",
+      "designation": "Co-founder of Qatar Tires",
+      "comment": "Impressed with Spotlight`s support of our tire collections. They are one of the keys to our success",
+      "avatar_url": "../../assets/image/agency/client/Recycled-Tires.jpeg"
+    }
+  ],
+  "faq": [    {
+    "id": 1,
+    "expend": true,
+    "title": "What type of tires does Spotlight pick up?",
+    
+    "description": "Passenger tires, light truck tires, OTRs, motorcycle tires and Ag tires"
+  },
+  {
+    "id": 2,
+    "expend": true,
+    "title": "Does Spotlight have a tire minimum for pickup?",
+    "description": "Yes, we require at least 100 tires to be available for pickup"
+  },
+  {
+    "id": 3,
+    "expend": true,
+    "title": "Can I drop off tires at Spotlight`s facility?",
+    "description": "Yes, we accept tire drop offs at our facility, Monday - Thursday, 9am - 4pm CT."
+  },
+  {
+    "id": 4,
+    "expend": true,
+    "title": "Can I be added to a reaccuring route?",
+    "description": "Yes, depending on the valume, we can add you to a recurring route multiple times a week, once a week, every other week or once a month."
+  }
+  ],
+  "menuWidget": [
+    {
+      "id": 2,
+      "title": "Our Information",
+      "menuItems": [
+        {
+          "id": 3,
+          "url": "#2",
+          "text": "Terms & Conditions"
+        },
+        {
+          "id": 5,
+          "url": "#5",
+          "text": "Store Hours"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "My Account",
+      "menuItems": [
+        {
+          "id": 4,
+          "url": "#4",
+          "text": "Login"
+        },
+        {
+          "id": 1,
+          "url": "#1",
+          "text": "Pay My Bill"
+        },
+        {
+          "id": 2,
+          "url": "#2",
+          "text": "Request a Pickup"
+        },
+        {
+          "id": 3,
+          "url": "#3",
+          "text": "Dispute a Bill"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Policy",
+      "menuItems": [{
+          "id": 1,
+          "url": "#1",
+          "text": "Recycling Policy"
+        },
+        {
+          "id": 2,
+          "url": "#2",
+          "text": "Pickup Policy"
+        }
+      ]
+    }
+  ],
+  "social_profile": [{
+      "id": 1,
+      "icon": "flaticon-facebook-logo",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "icon": "flaticon-twitter-logo-silhouette",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "icon": "flaticon-instagram",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "icon": "flaticon-tumblr-logo",
+      "link": "#"
+    },
+    {
+      "id": 5,
+      "icon": "flaticon-dribble-logo",
+      "link": "#"
+    }
+  ]
+}
