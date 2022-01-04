@@ -2,6 +2,16 @@ const bodyParser = require("body-parser")
 const express = require("express")
 const nodemailer = require("nodemailer")
 const app = express()
+var sgTransport = require('nodemailer-sendgrid-transport');
+
+var options = {
+    auth: {
+      api_user: 'SENDGRID_USERNAME',
+
+    }
+  }
+
+
 app.use(bodyParser.urlencoded())
 const contactAddress = "hey@yourwebsite.com"
 const mailer = nodemailer.createTransport({

@@ -25,6 +25,7 @@ import Seo from 'components/seo';
 
 
 const Agency = () => {
+  console.log(process.env.GATSBY_SENDGRID, 'AGENCY*****')
   return (
     <ThemeProvider theme={agencyTheme}>
       <Fragment>

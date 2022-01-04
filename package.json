@@ -1,0 +1,59 @@
+{
+  "name": "superprops",
+  "description": "Modern Multipurpose Landing Pages Template Using React, Next, Styled Components and so on. It also support Gatsby Static site generator ",
+  "version": "10.0.0",
+  "private": true,
+  "author": "Spotlight",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2"
+  },
+  "workspaces": [
+    "packages/landing",
+    "packages/landing-gatsby"
+  ],
+  "scripts": {
+    "clean": "yarn workspaces run rimraf \"{.next,node_modules,.cache,out,dist}\" && rimraf node_modules",
+    "next-dev": "yarn workspace @superprops/next run dev",
+    "next-build": "yarn workspace @superprops/next run build",
+    "next-start": "yarn workspace @superprops/next run start",
+    "next-export": "yarn workspace @superprops/next run export",
+    "gatsby-dev": "yarn workspace @superprops/gatsby run dev",
+    "gatsby-build": "yarn workspace @superprops/gatsby run build",
+    "gatsby-serve": "yarn workspace @superprops/gatsby run start"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,md,css}": [
+      "prettier --trailing-comma es5 --single-quote --write"
+    ]
+  },
+  "browser": {
+    "child_process": false
+  },
+  "dependencies": {
+    "@mui/lab": "^5.0.0-alpha.62",
+    "assert": "^2.0.0",
+    "axios": "^0.24.0",
+    "body-parse": "^0.1.0",
+    "buffer": "^6.0.3",
+    "constants-browserify": "^1.0.0",
+    "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "firebase-admin": "^10.0.1",
+    "fs": "^0.0.1-security",
+    "gatsby-plugin-express": "^1.1.6",
+    "gatsby-plugin-nodejs": "^0.7.0",
+    "path-browserify": "^1.0.1",
+    "yup": "^0.32.11"
+  }
+}

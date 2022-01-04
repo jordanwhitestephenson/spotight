@@ -11,3 +11,4 @@ RUN touch /var/run/nginx.pid && chown nginx:nginx /var/run/nginx.pid
 
 EXPOSE 8000
 HEALTHCHECK CMD [ "wget", "-q", "localhost:8000" ]
+

@@ -22,7 +22,7 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="LEARN MORE" {...btnStyle} />
+      <Button title="Request Tire Collection" {...btnStyle} />
     </Fragment>
   );
   return (

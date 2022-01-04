@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
 import Box from "common/components/Box";
@@ -20,15 +20,13 @@ import MobileDatePicker from "@mui/lab/MobileDatePicker";
 import NewsletterSectionWrapper, {
   NewsletterForm,
 } from "./newsletterSection.style";
-// import * as admin from 'firebase-admin';
+
 import * as yup from "yup";
 import * as sgMail from '@sendgrid/mail';
 
+
 // admin.initializeApp();
 
-
-
-sgMail.setApiKey('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');
 const validationSchema = yup.object({
   email: yup
     .string("Enter your email")
@@ -42,6 +40,9 @@ const validationSchema = yup.object({
 });
 
 const NewsletterSection = ({ sectionHeader, btnStyle, title, description }) => {
+
+  console.log(process.env.GATSBY_API_URL, '***', process.env.GATSBY_API_SENDGRID, process.env.YAE, process.env.GATBSY_YAE)
+
   const [datePicked, setDate] = useState(new Date());
   const formik = useFormik({
     initialValues: {

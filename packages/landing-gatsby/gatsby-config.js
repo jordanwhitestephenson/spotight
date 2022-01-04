@@ -1,15 +1,19 @@
+
+require('dotenv').config({
+  path: '.env',
+})
+console.log(process.env.STAGING)
 module.exports = {
   siteMetadata: {
     title: `Spotlight Collections`,
     description: `Bringing tire knowledge and innovation to today's world`,
-    author: `@gatsbyjs`,
+    author: `Spotlight Collections`,
   },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-nodejs`,
-    
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
