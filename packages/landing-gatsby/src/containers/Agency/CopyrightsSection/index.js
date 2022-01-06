@@ -19,13 +19,13 @@ const CopyrightSection = () => {
   return (
     <CopyrightWrapper className="copyright_section">
       <ul>
-        {Data.agencyJson.social_profile.map((profile, index) => (
+        {/* {Data.agencyJson.social_profile.map((profile, index) => (
           <li key={`profile_key_${index}`}>
             <a href={profile.link} aira-label={profile.icon}>
               <i className={profile.icon} />
             </a>
           </li>
-        ))}
+        ))} */}
       </ul>
     </CopyrightWrapper>
   );

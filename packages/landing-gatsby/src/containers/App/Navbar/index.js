@@ -108,12 +108,12 @@ const Navbar = ({ navbarStyle, logoStyle, buttonStyle }) => {
           logoStyle={logoStyle}
         />
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Button
+          {/* <Button
             variant="textButton"
             onClick={handleSearchModal}
             icon={<i className="flaticon-magnifying-glass" />}
             aria-label="search"
-          />
+          /> */}
           <Button
             variant="textButton"
             onClick={handleLoginModal}

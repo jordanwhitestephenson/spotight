@@ -13,7 +13,7 @@ import Image from 'common/components/Image';
 import LoginModalWrapper from './loginModal.style';
 import 'rc-tabs/assets/index.css';
 import LogoImage from 'common/assets/image/agency/logo.png';
-import LoginImage from 'common/assets/image/agency/login-bg.jpg';
+import LoginImage from 'common/assets/image/agency/1f794712bdde9108c1fe68de8f5f56dc.jpg';
 import GoogleLogo from 'common/assets/image/agency/google-icon.jpg';
 
 const LoginModal = ({
@@ -50,7 +50,6 @@ const LoginModal = ({
         </Box>
         <Box className="col tabCol" {...col}>
           <Box {...contentWrapper}>
-            <Image src={LogoImage} {...logoStyle} alt="Logo" />
             <Tabs
               defaultActiveKey="loginForm"
               animated={{ tabPane: true }}
@@ -58,9 +57,9 @@ const LoginModal = ({
               // renderTabContent={() => <TabContent />}
             >
               <TabPane tab="LOGIN" key="loginForm">
-                <Heading content="Welcome Folk" {...titleStyle} />
+                <Heading content="So you have some tires..." {...titleStyle} />
                 <Text
-                  content="Welcome to Mate Family. Please login with your personal account information letter."
+                  content="Welcome to the Spotlight Family. Please login to view billing, reciepts and much more"
                   {...descriptionStyle}
                 />
                 <Button
@@ -83,12 +82,12 @@ const LoginModal = ({
                 </div>
               </TabPane>
               <TabPane tab="REGISTER" key="registerForm">
-                <Heading content="Welcome Folk" {...titleStyle} />
+                <Heading content="Welcome Folks" {...titleStyle} />
                 <Text
-                  content="Welcome to Mate Family. Please login with your personal account information letter."
+                  content="Accepting new clients soon. We're working on expanding. We appreciate your support. "
                   {...descriptionStyle}
                 />
-                <Button
+                {/* <Button
                   icon={<Image src={GoogleLogo} alt="Google Icon" />}
                   title="Sign up with Google"
                   iconPosition="left"
@@ -100,7 +99,7 @@ const LoginModal = ({
                 <Input inputType="password" isMaterial label="Password" />
                 <div>
                   <SignupButtonGroup />
-                </div>
+                </div> */}
               </TabPane>
             </Tabs>
           </Box>

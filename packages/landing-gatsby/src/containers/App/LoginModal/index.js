@@ -58,9 +58,9 @@ const LoginModal = ({
               // renderTabContent={() => <TabContent />}
             >
               <TabPane tab="LOGIN" key="loginForm">
-                <Heading content="Welcome Folk" {...titleStyle} />
+                <Heading content="Welcome Folks" {...titleStyle} />
                 <Text
-                  content="Welcome to Mate Family. Please login with your personal account information letter."
+                  content="Welcome to Mate Family. Please login with your personal account information to view Bill of Landings."
                   {...descriptionStyle}
                 />
                 <Button
@@ -83,9 +83,9 @@ const LoginModal = ({
                 </div>
               </TabPane>
               <TabPane tab="REGISTER" key="registerForm">
-                <Heading content="Welcome Folk" {...titleStyle} />
+                <Heading content="Welcome Folks" {...titleStyle} />
                 <Text
-                  content="Welcome to Mate Family. Please login with your personal account information letter."
+                  content="Welcome to Mate Family. Please login with your personal account information to view Bill of Landings."
                   {...descriptionStyle}
                 />
                 <Button

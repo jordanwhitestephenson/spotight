@@ -1,9 +1,12 @@
+const gatsbyExpress = require('gatsby-plugin-express');
 const bodyParser = require("body-parser");
 const express = require("express");
 const nodemailer = require("nodemailer");
-const app = express();
 var sgTransport = require("nodemailer-sendgrid-transport");
+const cors = require("cors");
 
+
+const app = express();
 var options = {
   auth: {
     api_user: "jordanwhitestephenson@gmail.com",
@@ -11,9 +14,7 @@ var options = {
   },
 };
 
-app.use(bodyParser.urlencoded());
-
-const contactAddress = "hey@yourwebsite.com";
+// app.use(bodyParser.urlencoded());
 
 var client = nodemailer.createTransport(sgTransport(options));
 
@@ -34,4 +35,13 @@ app.post("/collectionrequest", function (req, res) {
     }
   });
 });
-app.listen(3000);
+
+
+  app.use(cors({
+    /** Use this when web frontend / production **/
+    // origin: 'https://example.com',
+  
+    /** Use this when local frontend / development **/
+    origin: "http://localhost:8000",
+  }));
+  

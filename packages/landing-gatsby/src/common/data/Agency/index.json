@@ -21,7 +21,7 @@
     },
     {
       "label": "Request a Pickup",
-      "path": "#testimonialSection",
+      "path": "#requestTire",
       "offset": "100"
     },
     {
@@ -31,11 +31,6 @@
     },
     {
       "label": "FAQ",
-      "path": "#faqSection",
-      "offset": "100"
-    },
-    {
-      "label": "Contact Us",
       "path": "#faqSection",
       "offset": "100"
     }
@@ -67,7 +62,7 @@
       "id": 1,
       "icon": "flaticon-pencil-case",
       "title": "Tire Collection",
-      "description": "Tires of every shape and size are collected at more than 39,000 retail locations nationwide. We maintain a network of door-to-door reclamation services with processing plants at strategic locations."
+      "description": "Tires of every shape and size are collected by Spotlight Collections. We maintain a network of door-to-door reclamation services with processing plants at strategic locations."
     },
     {
       "id": 2,
@@ -285,7 +280,8 @@
       ]
     }
   ],
-  "social_profile": [{
+  "social_profile": [
+    {
       "id": 1,
       "icon": "flaticon-facebook-logo",
       "link": "#"
@@ -312,3 +308,4 @@
     }
   ]
 }
+

@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Button from 'common/components/Button';
-import FeatureBlock from 'common/components/FeatureBlock';
-import Container from 'common/components/UI/Container';
-import Particles from '../../Agency/Particle';
-import BannerWrapper, { DiscountLabel } from './bannerSection.style';
-import MobileBanner from 'common/assets/image/agency/2-men-using-tablet-stood-infront-of-shovel-loader-SMALL.jpeg';
-
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
+import Box from "common/components/Box";
+import Text from "common/components/Text";
+import Heading from "common/components/Heading";
+import Button from "common/components/Button";
+import FeatureBlock from "common/components/FeatureBlock";
+import Container from "common/components/UI/Container";
+import Particles from "../../Agency/Particle";
+import BannerWrapper, { DiscountLabel } from "./bannerSection.style";
+import MobileBanner from "common/assets/image/agency/2-men-using-tablet-stood-infront-of-shovel-loader-SMALL.jpeg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 const BannerSection = ({
   row,
   col,
@@ -21,22 +21,24 @@ const BannerSection = ({
   outlineBtnStyle,
 }) => {
   const ButtonGroup = () => (
-    <Fragment>
-      <Button title="Request Tire Collection" {...btnStyle} />
-    </Fragment>
+
+      <AnchorLink href="#requestTire" offset="40">
+              <Button title="Request Tire Collection" {...btnStyle} />
+      </AnchorLink>
+
+
   );
   return (
-    <BannerWrapper className= "mobileBannerWrapper">
+    <BannerWrapper className="mobileBannerWrapper">
       <Particles />
-      <Container >
+      <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col}>
-          
             <FeatureBlock
-            id = "AboutUsSection"
+              id="AboutUsSection"
               title={
                 <Heading
-                className="mobileHeadline"
+                  className="mobileHeadline"
                   content="Tire Knowledge and Innovation"
                   {...title}
                 />
@@ -49,7 +51,7 @@ const BannerSection = ({
               }
               button={<ButtonGroup />}
             />
-              <img className = "bannerMobile" src = {MobileBanner} alt= "spotlight"/> 
+            <img className="bannerMobile" src={MobileBanner} alt="spotlight" />
           </Box>
         </Box>
       </Container>
@@ -70,54 +72,54 @@ BannerSection.propTypes = {
 BannerSection.defaultProps = {
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
-    ml: '-15px',
-    mr: '-15px',
-    alignItems: 'center',
+    flexWrap: "wrap",
+    ml: "-15px",
+    mr: "-15px",
+    alignItems: "center",
   },
   col: {
-    pr: '15px',
-    pl: '15px',
-    width: ['100%', '70%', '60%', '50%'],
+    pr: "15px",
+    pl: "15px",
+    width: ["100%", "70%", "60%", "50%"],
   },
   title: {
-    fontSize: ['26px', '34px', '42px', '55px'],
-    fontWeight: '300',
-    color: '#0f2137',
-    letterSpacing: '-0.025em',
-    mb: ['20px', '25px'],
-    lineHeight: '1.31',
+    fontSize: ["26px", "34px", "42px", "55px"],
+    fontWeight: "300",
+    color: "#0f2137",
+    letterSpacing: "-0.025em",
+    mb: ["20px", "25px"],
+    lineHeight: "1.31",
   },
   description: {
-    fontSize: '16px',
-    color: '#343d48cc',
-    lineHeight: '2.1',
-    mb: '0',
+    fontSize: "16px",
+    color: "#343d48cc",
+    lineHeight: "2.1",
+    mb: "0",
   },
   btnStyle: {
-    minWidth: ['120px', '156px'],
-    fontSize: '14px',
-    fontWeight: '500',
+    minWidth: ["120px", "156px"],
+    fontSize: "14px",
+    fontWeight: "500",
   },
   outlineBtnStyle: {
-    minWidth: ['130px', '156px'],
-    fontSize: '14px',
-    fontWeight: '500',
-    color: '#0f2137',
-    p: '5px 10px',
+    minWidth: ["130px", "156px"],
+    fontSize: "14px",
+    fontWeight: "500",
+    color: "#0f2137",
+    p: "5px 10px",
   },
   discountAmount: {
-    fontSize: '14px',
-    color: '#0ba0e9',
+    fontSize: "14px",
+    color: "#0ba0e9",
     mb: 0,
-    as: 'span',
-    mr: '0.4em',
+    as: "span",
+    mr: "0.4em",
   },
   discountText: {
-    fontSize: '14px',
-    color: '#0f2137',
+    fontSize: "14px",
+    color: "#0f2137",
     mb: 0,
-    as: 'span',
+    as: "span",
   },
 };
 

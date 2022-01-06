@@ -135,7 +135,7 @@ const AboutUsSection = ({
                 title={<Heading content={feature.title} {...featureTitle} />}
               />
             ))}
-            <Button title="Learn More" {...btnStyle} />
+            {/* <Button title="Learn More" {...btnStyle} /> */}
           </Box>
         </Box>
       </Box>

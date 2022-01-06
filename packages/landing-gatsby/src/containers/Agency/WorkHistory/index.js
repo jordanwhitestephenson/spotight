@@ -29,7 +29,7 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
                   {...description}
                 />
               }
-              button={<Button title="WORK HISTORY" {...btnStyle} />}
+              // button={<Button title="WORK HISTORY" {...btnStyle} />}
             />
           </Box>
           <Box className="col" {...col}>
@@ -38,7 +38,7 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
                 <h3>
                   <CountUp start={0} end={20} />+
                 </h3>
-                <Text content="Companies Engaged" />
+                <Text content="Years of Experience" />
               </Card>
               <Card className="card" {...cardStyle}>
                 <h3>
@@ -48,14 +48,14 @@ const WorkHistory = ({ row, col, cardStyle, title, description, btnStyle }) => {
               </Card>
               <Card className="card" {...cardStyle}>
                 <h3>
-                  <CountUp start={0} end={300} duration={5} />+
+                  <CountUp start={0} end={500} duration={5} />+
                 </h3>
-                <Text content="Projects Complete" />
+                <Text content="Tire Collections Completed" />
               </Card>
-              <Card className="card" {...cardStyle}>
+              {/* <Card className="card" {...cardStyle}>
                 <Text content="& Much More" />
                 <a href="#1">View work history</a>
-              </Card>
+              </Card> */}
             </CounterUpArea>
           </Box>
         </Box>

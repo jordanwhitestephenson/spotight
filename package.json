@@ -53,7 +53,9 @@
     "fs": "^0.0.1-security",
     "gatsby-plugin-express": "^1.1.6",
     "gatsby-plugin-nodejs": "^0.7.0",
+    "http-proxy-middleware": "^2.0.1",
     "path-browserify": "^1.0.1",
+    "react-input-mask": "^2.0.4",
     "yup": "^0.32.11"
   }
 }

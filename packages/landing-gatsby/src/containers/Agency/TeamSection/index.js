@@ -44,18 +44,17 @@ const TeamSection = ({
       }
     }
   `);
-
   return (
     <TeamSectionWrapper id="ExecutiveSection">
       <Container>
-        <Box {...sectionHeader}>
+        {/* <Box {...sectionHeader}>
           <Text content="Our Executive Team" {...sectionSubTitle} />
           <Heading
-            content="Meet with team member behind scenes"
+            content="Coming Soon.."
             {...sectionTitle}
           />
-        </Box>
-        <Box className="row" {...row}>
+        </Box> */}
+        {/* <Box className="row" {...row}>
           {Data.agencyJson.teamMember.map((member, index) => (
             <Box className="col" {...col} key={`team_key-${index}`}>
               <FeatureBlock
@@ -93,10 +92,62 @@ const TeamSection = ({
               />
             </Box>
           ))}
-        </Box>
+        </Box> */}
       </Container>
     </TeamSectionWrapper>
   );
+  // return (
+  //   <TeamSectionWrapper id="ExecutiveSection">
+  //     <Container>
+  //       <Box {...sectionHeader}>
+  //         <Text content="Our Executive Team" {...sectionSubTitle} />
+  //         <Heading
+  //           content="Meet with team member behind scenes"
+  //           {...sectionTitle}
+  //         />
+  //       </Box>
+  //       <Box className="row" {...row}>
+  //         {Data.agencyJson.teamMember.map((member, index) => (
+  //           <Box className="col" {...col} key={`team_key-${index}`}>
+  //             <FeatureBlock
+  //               id={`member-${member.id}`}
+  //               className="team__member"
+  //               icon={
+  //                 <GatsbyImage
+  //                   src={
+  //                     (member.thumbnail_url !== null) | undefined
+  //                       ? member.thumbnail_url.childImageSharp.gatsbyImageData
+  //                       : {}
+  //                   }
+  //                   alt={`Team member photo ${member.id}`}
+  //                   className="member__photo"
+  //                 />
+  //               }
+  //               contentStyle={contentStyle}
+  //               title={<Heading content={member.name} {...memberName} />}
+  //               description={
+  //                 <Fragment>
+  //                   <Text content={member.designation} {...designation} />
+  //                   <SocialLinks>
+  //                     {member.social_links.map((social, index) => (
+  //                       <a
+  //                         href={social.url}
+  //                         key={`profile_id-${index}`}
+  //                         aria-label={social.icon}
+  //                       >
+  //                         <i className={social.icon}></i>
+  //                       </a>
+  //                     ))}
+  //                   </SocialLinks>
+  //                 </Fragment>
+  //               }
+  //             />
+  //           </Box>
+  //         ))}
+  //       </Box>
+  //     </Container>
+  //   </TeamSectionWrapper>
+  // );
 };
 
 // TeamSection style props

@@ -1,15 +1,25 @@
 
-require('dotenv').config({
-  path: '.env',
+require("dotenv").config({
+  path: `.env`,
 })
-console.log(process.env.STAGING)
+
 module.exports = {
   siteMetadata: {
-    title: `Spotlight Collections`,
+    title: `Used Tire Collections and Sales `,
     description: `Bringing tire knowledge and innovation to today's world`,
     author: `Spotlight Collections`,
   },
+  proxy: {
+    prefix: "/collectionrequest",
+    url: "localhost:8000",
+  },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-express',
+      options: {
+        output: 'config/gatsby-express.json',
+      }
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
